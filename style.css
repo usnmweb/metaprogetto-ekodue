@@ -403,7 +403,7 @@ footer {
 
 .dline {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 #partners {
@@ -426,7 +426,7 @@ footer {
 
 .map2 {
   margin-top: 1rem;
-  width: 40vw;
+  width: 25vw;
   height: auto;
 }
 
