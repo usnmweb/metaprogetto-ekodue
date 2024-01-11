@@ -728,5 +728,10 @@ footer {
     display: block;
   }
 
+  .map2 {
+    margin-top: 1rem;
+    width: 80vw;
+    height: auto;
+  }
   /* Footer end */
 }
