@@ -148,7 +148,7 @@ header ul li a {
   justify-items: center;
   align-items: center;
   width: 25%;
-  height: 25%;
+  height: auto;
   padding-left: 5rem;
   padding-top: 1rem;
 }
@@ -158,11 +158,20 @@ header ul li a {
 }
 
 .glog img {
-  max-width: 60%;
+  max-width: 70%;
   height: auto;
-  border: 2px solid white;
 }
 
+.plog {
+  max-width: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.plog img {
+  width: 100%;
+  padding-top: 1rem;
+}
 .p {
   padding-top: 1rem;
 }
@@ -252,9 +261,6 @@ hr {
 #chi {
   border-right: 1px solid #ccc;
 }
-#dove {
-  border-left: 1px solid #f0f0f0;
-}
 
 .txtmp p {
   padding-top: 1rem;
@@ -277,6 +283,7 @@ hr {
 
 iframe {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 450px;
   height: 300px;
 }
@@ -386,12 +393,17 @@ button[type="submit"]:hover {
 footer {
   background-color: #2fb2a2;
   background-image: url("heder.jpg");
-  background-size: 100% 130%;
+  background-size: 150% 130%;
   background-repeat: no-repeat;
   background-position: center;
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 1%;
+}
+
+.dline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 #partners {
@@ -400,8 +412,8 @@ footer {
 }
 
 #partners h5 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
 }
 
 .pt {
@@ -421,7 +433,6 @@ footer {
     background-size: 140vw auto;
     background-repeat: no-repeat;
     background-position: center;
-    /* position: fixed; */
     z-index: 99;
   }
 
@@ -518,11 +529,20 @@ footer {
   }
 
   .glog img {
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
-    border: 2px solid white;
   }
 
+  .plog {
+    max-width: 100%;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .plog img {
+    width: 100%;
+    padding-top: 1rem;
+  }
   .platav {
     padding: 2rem 2rem 1rem 2rem;
     display: flex;
@@ -676,12 +696,35 @@ footer {
   footer {
     background-color: #2fb2a2;
     background-image: url("heder.jpg");
-    background-size: 150% 130%;
+    background-size: 160% 100%;
     background-repeat: no-repeat;
     background-position: center;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 1%;
+  }
+
+  #partners {
+    display: block;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+
+  #partners h5 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  .pt {
+    justify-content: center;
+  }
+
+  #partners img {
+    max-width: 30vw;
+  }
+
+  .dline {
+    display: block;
   }
 
   /* Footer end */
