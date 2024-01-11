@@ -246,7 +246,7 @@ hr {
 #dove {
   flex: 1 1 50%;
   padding-left: 10%;
-  padding-right: 10%;
+  padding-right: 5%;
 }
 
 #chi {
@@ -256,12 +256,23 @@ hr {
   border-left: 1px solid #f0f0f0;
 }
 
-#chi > p {
+.txtmp p {
   padding-top: 1rem;
 }
 
-.txtmp p {
+.carchi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.carchi img {
+  width: 20vw;
+}
+
+#chi p {
   padding-top: 1rem;
+  padding-right: 1rem;
+  width: 16vw;
 }
 
 iframe {
@@ -271,6 +282,19 @@ iframe {
 }
 
 /* Chi Dove fine */
+
+/* Caricature */
+
+.caricature {
+  display: flex;
+  justify-content: center;
+}
+
+.caricature img {
+  width: 90vw;
+}
+
+/* Caricature fine */
 
 /* Servizi */
 
@@ -540,15 +564,15 @@ footer {
   }
 
   #missione p {
-    word-spacing: 1rem;
-    text-align: justify;
+    /* word-spacing: 1rem; */
+    text-align: start;
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
   #missione img {
     padding-top: 1rem;
-    width: 70vw;
+    width: 75vw;
   }
 
   /* Missione end */
@@ -568,7 +592,33 @@ footer {
     text-align: start;
   }
   .txtmp p {
+    padding: 2rem;
     padding-top: 1rem;
+  }
+  .carchi {
+    display: block;
+  }
+
+  .carimg {
+    display: flex;
+    justify-content: center;
+  }
+  .carchi img {
+    width: 80vw;
+  }
+
+  #chi p {
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+
+    width: 80vw;
+  }
+
+  iframe {
+    margin-top: 1rem;
+    width: 450px;
+    height: 300px;
   }
 
   iframe {
@@ -578,6 +628,14 @@ footer {
   }
 
   /* Chi Dove fine */
+
+  /* Caricature */
+  .caricature,
+  .non {
+    display: none;
+  }
+
+  /* Caricature fine */
 
   /* Servizi */
 
