@@ -23,7 +23,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #2fb2a2;
   border-radius: 20px;
-  border: 5px solid black;
+  border: 2px solid black;
 }
 
 body {
@@ -357,7 +357,7 @@ label {
 
 input,
 textarea {
-  width: 100%;
+  width: 96%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 3px;
