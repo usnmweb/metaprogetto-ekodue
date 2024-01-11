@@ -285,7 +285,8 @@ iframe {
 
 /* Caricature */
 
-.caricature {
+.caricature,
+iframe {
   display: flex;
   justify-content: center;
 }
@@ -420,7 +421,7 @@ footer {
     background-size: 140vw auto;
     background-repeat: no-repeat;
     background-position: center;
-    position: fixed;
+    /* position: fixed; */
     z-index: 99;
   }
 
@@ -474,7 +475,7 @@ footer {
 
   .title h1 {
     font-size: 1.5rem;
-    padding-top: 6.5rem;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
     font-weight: normal;
   }
@@ -592,8 +593,7 @@ footer {
     text-align: start;
   }
   .txtmp p {
-    padding: 2rem;
-    padding-top: 1rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
   }
   .carchi {
     display: block;
@@ -615,10 +615,9 @@ footer {
     width: 80vw;
   }
 
-  iframe {
-    margin-top: 1rem;
-    width: 450px;
-    height: 300px;
+  .map {
+    display: grid;
+    justify-content: center;
   }
 
   iframe {
