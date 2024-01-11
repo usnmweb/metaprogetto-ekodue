@@ -96,10 +96,15 @@ header ul li a {
 
 .title h1 {
   transition: all 0.8s ease;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-weight: normal;
+  margin: 0;
+}
+
+.title br {
+  display: none;
 }
 
 /* H1 end */
@@ -129,7 +134,7 @@ header ul li a {
   height: auto;
 
   transform: translate(-50%, -50%);
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 /* Video END */
@@ -138,13 +143,14 @@ header ul li a {
 
 .imv {
   position: absolute;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
   justify-items: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  padding-left: 4rem;
+  width: 25%;
+  height: 25%;
+  padding-left: 5rem;
+  padding-top: 1rem;
 }
 
 .glog {
@@ -157,20 +163,40 @@ header ul li a {
   border: 2px solid white;
 }
 
-.cdwl {
-  background-color: white;
-  text-align: center;
+.p {
+  padding-top: 1rem;
 }
 
-.cdwl img {
-  width: 20vw;
+.platav {
+  padding: 2rem 2rem 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.platav h5 {
+  font-size: 1.4rem;
+}
+
+.logav {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 5vw;
+}
+
+.logav img {
+  width: 6vw;
+}
+
 /* Immagini su video end */
 
 /* Missione */
 
 #missione {
   text-align: center;
+
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #missione h2 {
@@ -181,9 +207,25 @@ header ul li a {
   font-weight: normal;
 }
 
+.cmiss {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 #missione p {
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.genp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#missione img {
+  padding-top: 1rem;
+  width: 35vw;
 }
 
 /* Missione end */
@@ -203,7 +245,8 @@ hr {
 #chi,
 #dove {
   flex: 1 1 50%;
-  padding: 3rem 10rem;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #chi {
@@ -216,6 +259,7 @@ hr {
 #chi > p {
   padding-top: 1rem;
 }
+
 .txtmp p {
   padding-top: 1rem;
 }
@@ -228,6 +272,123 @@ iframe {
 
 /* Chi Dove fine */
 
+/* Servizi */
+
+#servizi {
+  text-align: center;
+}
+
+#servizi h2 {
+  transition: all 0.8s ease;
+  font-size: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-weight: normal;
+}
+
+.carser {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 10% 0 10%;
+}
+
+.cs h5 {
+  padding: 1rem;
+}
+
+.cs p {
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+
+.cs img {
+  width: 25vw;
+}
+
+/* Servizi fine */
+
+/* Contact Form */
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff7e6;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  background-color: #2fb2a2;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: black;
+}
+/* Contact form end */
+
+/* FOOTER */
+
+footer {
+  background-color: #2fb2a2;
+  background-image: url("heder.jpg");
+  background-size: 100% 130%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+}
+
+#partners {
+  display: block;
+  padding: 1rem 0 1rem 0;
+}
+
+#partners h5 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pt {
+  justify-content: center;
+}
+
+#partners img {
+  max-width: 10vw;
+}
+
+/* FOOTER end */
+
 @media only screen and (max-width: 480px) {
   /* NAV */
   header {
@@ -236,6 +397,7 @@ iframe {
     background-repeat: no-repeat;
     background-position: center;
     position: fixed;
+    z-index: 99;
   }
 
   header ul {
@@ -287,10 +449,14 @@ iframe {
   }
 
   .title h1 {
-    font-size: 2.5rem;
-    padding-top: 6rem;
+    font-size: 1.5rem;
+    padding-top: 6.5rem;
     padding-bottom: 1rem;
     font-weight: normal;
+  }
+
+  .title br {
+    display: flex;
   }
 
   /* H1 end */
@@ -319,7 +485,38 @@ iframe {
     width: 100%;
     height: 100%;
     transform: translate(-50%, -50%);
-    opacity: 0.3;
+    opacity: 0.8;
+  }
+
+  .imv {
+    left: -3rem;
+  }
+
+  .glog img {
+    max-width: 80%;
+    height: auto;
+    border: 2px solid white;
+  }
+
+  .platav {
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .platav h5 {
+    font-size: 1rem;
+  }
+
+  .logav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logav img {
+    width: 10vw;
+    padding: 0.5rem;
   }
 
   /* Video END */
@@ -338,9 +535,20 @@ iframe {
     font-weight: normal;
   }
 
+  .cmiss {
+    display: list-item;
+  }
+
   #missione p {
+    word-spacing: 1rem;
+    text-align: justify;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  #missione img {
+    padding-top: 1rem;
+    width: 70vw;
   }
 
   /* Missione end */
@@ -370,4 +578,54 @@ iframe {
   }
 
   /* Chi Dove fine */
+
+  /* Servizi */
+
+  #servizi {
+    text-align: center;
+  }
+
+  #servizi h2 {
+    transition: all 0.8s ease;
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-weight: normal;
+  }
+
+  .carser {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 10% 0 10%;
+  }
+
+  .cs h5 {
+    padding: 1rem;
+  }
+
+  .cs p {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+
+  .cs img {
+    width: 50vw;
+  }
+
+  /* Servizi fine */
+
+  /* Footer */
+  footer {
+    background-color: #2fb2a2;
+    background-image: url("heder.jpg");
+    background-size: 150% 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+  }
+
+  /* Footer end */
 }
