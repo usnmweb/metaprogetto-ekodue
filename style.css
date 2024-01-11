@@ -1,0 +1,373 @@
+* {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+html {
+  scrollbar-color: black;
+  scrollbar-width: thin;
+}
+
+/* For Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2fb2a2;
+  border-radius: 20px;
+  border: 5px solid black;
+}
+
+body {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fff7e6;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* NAV */
+
+header {
+  background-image: url("heder.jpg");
+  background-size: 110% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+}
+
+.msid {
+  width: 110px;
+}
+
+.logo {
+  max-width: 30vw;
+  height: 100%;
+  padding: 1rem;
+}
+
+.nmenu {
+  display: block;
+}
+
+.nmenu a {
+  color: black;
+  font-size: 1rem;
+  justify-content: end;
+}
+
+.navbar {
+  display: none;
+}
+
+/* NAV END */
+
+/* Title H1 */
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  transition: all 0.8s ease;
+  font-size: 3.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: normal;
+}
+
+/* H1 end */
+
+/* VIDEO */
+
+.video-container {
+  background-color: black;
+  width: 100%;
+  height: 80vh;
+}
+
+#video-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 80%;
+  min-height: 80%;
+  width: auto;
+  height: auto;
+
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+}
+
+/* Video END */
+
+/* Immagini su video */
+
+.imv {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 4rem;
+}
+
+.glog {
+  justify-content: center;
+}
+
+.glog img {
+  max-width: 60%;
+  height: auto;
+  border: 2px solid white;
+}
+
+.cdwl {
+  background-color: white;
+  text-align: center;
+}
+
+.cdwl img {
+  width: 20vw;
+}
+/* Immagini su video end */
+
+/* Missione */
+
+#missione {
+  text-align: center;
+}
+
+#missione h2 {
+  transition: all 0.8s ease;
+  font-size: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-weight: normal;
+}
+
+#missione p {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+/* Missione end */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 20px 0;
+}
+
+/* chi dove */
+
+.cdcont {
+  display: flex;
+}
+
+#chi,
+#dove {
+  flex: 1 1 50%;
+  padding: 3rem 10rem;
+}
+
+#chi {
+  border-right: 1px solid #ccc;
+}
+#dove {
+  border-left: 1px solid #f0f0f0;
+}
+
+#chi > p {
+  padding-top: 1rem;
+}
+.txtmp p {
+  padding-top: 1rem;
+}
+
+iframe {
+  margin-top: 1rem;
+  width: 450px;
+  height: 300px;
+}
+
+/* Chi Dove fine */
+
+@media only screen and (max-width: 480px) {
+  /* NAV */
+  header {
+    background-image: url("heder.jpg");
+    background-size: 140vw auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .nmenu {
+    display: block;
+  }
+
+  .nmenu a {
+    display: block;
+    text-align: end;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 0.8rem;
+  }
+  .msid {
+    display: none;
+  }
+  .logo {
+    max-width: 60vw;
+    height: 100%;
+  }
+
+  .nmenu {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .nmenu a:hover {
+    background-color: #000;
+  }
+
+  .nmenu i {
+    margin-right: 5px;
+  }
+
+  /* NAV END */
+
+  /* Title H1 */
+  .title {
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 2.5rem;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+    font-weight: normal;
+  }
+
+  /* H1 end */
+
+  /* VIDEO */
+
+  .video-container {
+    background-color: black;
+    width: 100%;
+    height: 27vh;
+  }
+
+  #video-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 40%;
+    min-height: 40%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+  }
+
+  /* Video END */
+
+  /* Missione */
+
+  #missione {
+    text-align: center;
+  }
+
+  #missione h2 {
+    transition: all 0.8s ease;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-weight: normal;
+  }
+
+  #missione p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* Missione end */
+
+  /* chi dove */
+
+  .cdcont {
+    display: grid;
+  }
+
+  #chi,
+  #dove {
+    padding: 1rem;
+  }
+
+  #chi > p {
+    text-align: start;
+  }
+  .txtmp p {
+    padding-top: 1rem;
+  }
+
+  iframe {
+    margin-top: 1rem;
+    width: 80vw;
+    height: auto;
+  }
+
+  /* Chi Dove fine */
+}
