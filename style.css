@@ -37,7 +37,7 @@ body {
 /* NAV */
 
 header {
-  background-image: url("heder.jpg");
+  background-image: url("/img/heder.jpg");
   background-size: 110% auto;
   background-repeat: no-repeat;
   background-position: center;
